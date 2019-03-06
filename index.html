@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="/style1.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <title>Clicking Game</title>
+</head>
+
+<body>
+  <h1 class = "title">How fast can you click?</h1>
+  <div id="app">
+            <p>
+              <button class = "what" type = "submit" @click = "updateCount()">{{ GameOver }}</button>
+            </p>
+            <h2> {{ Finished }} </h2>
+            <h1> You clicked <b>{{ numClicks }}</b> times</h1>
+            <h2> You have <b>{{ secs }}</b> secs left </h2>
+
+            <button type = "submit" @click = "reset()">Reset</button>
+    
+  </div>
+
+
+
+ 
+
+
+  <div class="footer">
+    <p class = "footer2">Click <a class = "b" href = "https://github.com/BYU-CS-260-Winter-2019/lab-3-barnummk" target="_blank"> Here </a> for Git Hub Link</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
+  <script src="/scripts.js"></script>
+</body>
+
+</html>
